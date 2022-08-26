@@ -21,7 +21,7 @@ export class TasksService {
   }
 
   async findOne(id: number): Promise<Task | null> {
-    return await this.taskRepository.findOne({ id });
+    return await this.taskRepository.findOneBy({ id });
   }
 
   // update(id: number, updateTaskDto: UpdateTaskDto) {
